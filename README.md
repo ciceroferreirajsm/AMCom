@@ -123,11 +123,3 @@ A entidade `Idempotencia` representa a controle de requisições e respostas ide
 3. **Testes**:
    - O projeto utiliza **FluentAssertions** para facilitar a escrita de testes unitários. É recomendado que testes sejam feitos para garantir que todas as funcionalidades estejam funcionando conforme esperado.
 
-## **Licença e Contato**
-
-Este projeto está licenciado sob a **MIT License**.
-
-**Contato**: 
-- Email: [contato@movimentacaoapi.com](mailto:contato@movimentacaoapi.com)
-- GitHub: [https://github.com/seu-usuario/MovimentacaoAPI](https://github.com/seu-usuario/MovimentacaoAPI)
-
