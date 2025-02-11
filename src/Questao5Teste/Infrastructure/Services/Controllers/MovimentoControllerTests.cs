@@ -10,15 +10,13 @@ namespace Questao5Teste.Infrastructure.Services.Controllers
 {
     public class MovimentoControllerTests
     {
-        private readonly Mock<IContaCorrenteService> _mockContaCorrenteService;
         private readonly Mock<IMovimentoService> _mockMovimentoService;
         private readonly MovimentoController _controller;
 
         public MovimentoControllerTests()
         {
-            _mockContaCorrenteService = new Mock<IContaCorrenteService>();
             _mockMovimentoService = new Mock<IMovimentoService>();
-            _controller = new MovimentoController(_mockContaCorrenteService.Object, _mockMovimentoService.Object);
+            _controller = new MovimentoController(_mockMovimentoService.Object);
         }
 
         [Fact]
@@ -31,10 +29,6 @@ namespace Questao5Teste.Infrastructure.Services.Controllers
                 Valor = 100,
                 Tipo = "X"
             };
-
-            _mockContaCorrenteService
-                .Setup(service => service.ObterPorId(It.IsAny<string>()))
-                .Returns((ContaCorrente?)null);
 
             // Act
             var result = _controller.Registrar(movimentoRequest);
