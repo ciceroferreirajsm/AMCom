@@ -73,47 +73,6 @@ A **Movimentação API** é uma API para o gerenciamento de movimentações banc
 
 ---
 
-### **Idempotência**
-
-- **POST** `/api/idempotencia/request`
-  - **Descrição**: Adiciona uma requisição e gera uma chave idempotente.
-  - **Request Body**: 
-    ```json
-    {
-      "request": "string"
-    }
-    ```
-  - **Respostas**:
-    - **200 OK**: Retorna a chave idempotente gerada.
-    - **400 Bad Request**: Se a requisição não estiver no formato correto.
-    - **500 Internal Server Error**: Se ocorrer algum erro no servidor.
-
----
-
-- **POST** `/api/idempotencia/response`
-  - **Descrição**: Adiciona uma resposta para uma chave idempotente.
-  - **Request Body**: 
-    ```json
-    {
-      "response": "string",
-      "chave": "string"
-    }
-    ```
-  - **Respostas**:
-    - **200 OK**: Resposta adicionada com sucesso.
-    - **400 Bad Request**: Se os parâmetros estiverem ausentes ou inválidos.
-    - **500 Internal Server Error**: Se ocorrer algum erro no servidor.
-
----
-
-- **GET** `/api/idempotencia`
-  - **Descrição**: Obtém todas as requisições e respostas idempotentes.
-  - **Respostas**:
-    - **200 OK**: Retorna uma lista de todas as requisições e respostas.
-    - **500 Internal Server Error**: Se ocorrer algum erro no servidor.
-
----
-
 ## **Estrutura do Projeto**
 
 O projeto está organizado de maneira a separar as responsabilidades em camadas distintas:
