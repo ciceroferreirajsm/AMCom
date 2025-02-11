@@ -26,9 +26,6 @@ A **Movimentação API** é uma API para o gerenciamento de movimentações banc
    git clone https://github.com/seu-usuario/MovimentacaoAPI.git
    cd MovimentacaoAPI
 
-
-   ## **Endpoints da API**
-
 ### **Movimento**
 
 - **POST** `/api/movimento`
