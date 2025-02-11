@@ -10,7 +10,8 @@ A **Movimentação API** é uma API para o gerenciamento de movimentações banc
 - **FluentAssertions** para testes de asserções
 - **MediatR** para manipulação de comandos e consultas
 - **Dapper** para acesso ao banco de dados
-
+- **Docker** para Containerização
+- 
 ## **Instalação e Configuração**
 
 ### **Pré-requisitos**
